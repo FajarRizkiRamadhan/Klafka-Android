@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- Base App Theme -->
+    <style name="Base.Theme.Klafka" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Warna utama aplikasi -->
+        <item name="colorPrimary">@color/secondary_shade_8</item>
+        <item name="colorSecondary">@color/primary_white</item>
+        <item name="android:statusBarColor">@color/secondary_shade_8</item>
+        <item name="android:windowBackground">@color/secondary_shade_8</item>
+    </style>
+
+    <!-- Tema Final yang Digunakan -->
+    <style name="Theme.Klafka" parent="Base.Theme.Klafka" />
+
+    <!-- ===================== -->
+    <!-- BUTTON STYLE          -->
+    <!-- ===================== -->
+
+    <style name="KlafkaButtonBase">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textColor">@color/primary_white</item>
+        <item name="android:backgroundTint">@color/secondary_blue_2</item>
+    </style>
+
+    <style name="KlafkaButton.Green" parent="KlafkaButtonBase">
+        <item name="android:backgroundTint">@color/secondary_blue_2</item>
+    </style>
+
+    <style name="KlafkaButton.Gray" parent="KlafkaButtonBase">
+        <item name="android:backgroundTint">@color/secondary_blue_1</item>
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+
+    <!-- ===================== -->
+    <!-- TEXT STYLE            -->
+    <!-- ===================== -->
+
+    <style name="KlafkaText.Title" parent="">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+
+    <style name="KlafkaTextSubtitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/secondary_shade_1</item>
+    </style>
+
+    <style name="KlafkaTextDescription">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/secondary_blue_1</item>
+    </style>
+</resources>
+
+

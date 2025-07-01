@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/secondary_shade_8">
+
+    <!-- Header -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="217dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/klafkakain"
+            android:contentDescription="@string/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/kembali"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/primary_blue" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Konten -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Judul -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cara Kerja Aplikasi"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/primary_blue"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Table of Steps -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:shrinkColumns="0"
+                android:divider="@color/secondary_blue_1"
+                android:showDividers="middle">
+
+                <!-- Table header row (optional) -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#"
+                        android:textStyle="bold"
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Instruksi"
+                        android:textStyle="bold"
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                </TableRow>
+
+                <!-- Row 1 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Buka menu klasifikasi pada navigasi bawah."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                </TableRow>
+
+                <!-- Row 2 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pilih jenis klasifikasi: Langsung (satu kain) atau Konveksi (batch)."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                </TableRow>
+
+                <!-- Row 3 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Siapkan kamera dengan zoom makro atau lensa clip‑on."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                </TableRow>
+
+                <!-- Row 4 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pastikan pencahayaan cukup dan tekstur kain terlihat jelas."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                </TableRow>
+
+                <!-- Row 5 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ambil foto kain dengan fokus pada serat dan pola, hindari blur."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                </TableRow>
+
+                <!-- Row 6 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Untuk batch: masukkan jumlah sampel, lalu ambil foto satu‑per‑satu."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                </TableRow>
+
+                <!-- Row 7 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Setelah selesai, tekan tombol “Proses Klasifikasi”."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                </TableRow>
+
+                <!-- Row 8 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Simpan atau ekspor hasil untuk dokumentasi dan QC."
+                        android:padding="8dp"
+                        android:textColor="@color/primary_black"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

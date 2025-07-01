@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/secondary_shade_8"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- Bagian Logo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        >
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="217dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/klafkakain" />
+    </LinearLayout>
+
+    <!-- ViewPager2 (Slider) -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- NestedScrollView untuk konten yang bisa di-scroll -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Judul dan Link -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Petunjuk penggunaan aplikasi ini!"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnSelengkapnya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Klik"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/primary_blue"
+                    android:textColor="@color/primary_white"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:minHeight="36dp"
+                    android:layout_marginStart="8dp"
+                    style="?android:attr/buttonBarButtonStyle"/>
+            </LinearLayout>
+
+            <!-- Kontainer Jenis Kain -->
+            <LinearLayout
+                android:id="@+id/containerJenisKain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="?android:attr/dividerHorizontal"
+                android:showDividers="middle" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewJenisKain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="80dp"
+                android:clipToPadding="false"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">KLAFKA</string>
+
+    <!-- Menu -->
+    <string name="menu_utama">Beranda</string>
+    <string name="menu_klasifikasi">Klasifikasi</string>
+    <string name="menu_konveksi">Konveksi</string>
+    <string name="menu_history">Riwayat</string>
+    <string name="menu_profile">Profil</string>
+    <string name="logo">Logo</string>
+
+
+    <!-- Home / Dashboard -->
+    <string name="item_silder_title">✂ Kenali Jenis Kain Katunmu! 🧵</string>
+    <string name="item_slider_1">Temukan perbedaan tiap jenis kain dan pilih sesuai kebutuhan.</string>
+    <string name="item_silder_2"></string>
+    <string name="jenis_kain_judul">Beberapa jenis kain katun yang sering digunakan!</string>
+    <string name="selengkapnya">Selengkapnya</string>
+    <string name="lihat_lebih_banyak">Lihat lebih banyak</string>
+
+    <!-- Klasifikasi -->
+    <string name="judul_klasifikasi">Masukkan gambar kain katun yang ingin diklasifikasi</string>
+    <string name="penjelasan_pengambilan_gambar">
+        Pastikan foto yang anda kirimkan memiliki kualitas yang cukup jelas dan hindari foto yang buram,
+        terpotong atau terlalu gelap sehingga sulit untuk mengidentifikasi jenis kain dengan jelas.
+    </string>
+    <string name="kamera">Kamera</string>
+    <string name="galeri">Galeri</string>
+    <string name="pindai">Klasifikasi</string>
+    <string name="gambar_kain">Gambar kain</string>
+
+    <!-- Konveksi -->
+    <string name="input_jenis_kain">Pilih jenis kain yang akan diklasifikasi</string>
+    <string name="input_jumlah_kain">Masukkan jumlah kain</string>
+    <string name="hasil_konveksi">Hasil klasifikasi skala konveksi</string>
+    <string name="presentase_kecocokan">Persentase kecocokan</string>
+
+    <!-- Riwayat -->
+    <string name="gambar_riwayat_jeniskain">Gambar riwayat Jenis Kain</string>
+    <string name="judul_riwayat">Riwayat Klasifikasi</string>
+    <string name="label_klasifikasi_langsung">Klasifikasi Langsung</string>
+    <string name="label_klasifikasi_konveksi">Klasifikasi Skala Konveksi</string>
+    <string name="hapus_riwayat">Hapus Riwayat</string>
+    <string name="tanggal">Tanggal</string>
+
+    <!-- Keterangan Kain -->
+    <string name="kegunaan">Kegunaan</string>
+    <string name="karakteristik">Karakteristik</string>
+    <string name="perawatan">Cara Perawatan</string>
+    <string name="gambar_keterangan_kain">Gambar Keterangan Kain</string>
+
+    <!-- Placeholder & Komponen Lain -->
+    <string name="placeholder_gambar">Placeholder gambar kain</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="logo_klafka">Logo KLAFKA</string>
+    <string name="kembali">Kembali</string>
+
+    <!-- Default / Misc -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

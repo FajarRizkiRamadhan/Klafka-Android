@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Spacing umum -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_s">8dp</dimen>
+    <dimen name="spacing_m">16dp</dimen>
+    <dimen name="spacing_l">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+
+    <!-- Padding default -->
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+
+    <!-- Margin khusus slider -->
+    <dimen name="slider_gap">8dp</dimen>
+    <dimen name="slider_height">180dp</dimen>
+
+    <!-- Ukuran card -->
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+
+    <!-- Ukuran gambar -->
+    <dimen name="image_thumbnail">80dp</dimen>
+    <dimen name="image_large">240dp</dimen>
+
+    <!-- Ukuran teks -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_header">22sp</dimen>
+
+    <!-- Ukuran ViewPager -->
+    <dimen name="viewpager_margin_horizontal">16dp</dimen>
+
+</resources>

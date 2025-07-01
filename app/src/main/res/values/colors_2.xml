@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Branding Colors (based on logo) -->
+    <color name="klafka_green_primary">#556B2F</color> <!-- Olive Green -->
+    <color name="klafka_yellow_accent">#F4C542</color> <!-- Mustard Yellow -->
+    <color name="klafka_deep_blue">#1B3A57</color> <!-- Navy/Deep Blue -->
+    <color name="klafka_background_light">#EAF6FF</color> <!-- Light Blue Background -->
+    <color name="klafka_text_dark">#2E2E2E</color>
+    <color name="klafka_text_light">#FFFFFF</color>
+    <color name="klafka_gray_light">#888888</color>
+    <color name="klafka_error_red">#D9534F</color>
+    <color name="klafka_surface_white">#FFFFFF</color>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Beranda" />
+    <item android:id="@+id/klasifikasiFragment"
+        android:icon="@drawable/ic_pindai"
+        android:title="Klasifikasi"/>
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/ic_history"
+        android:title="Riwayat" />
+    <item
+        android:id="@+id/konveksiFragment"
+        android:icon="@drawable/ic_konveksi"
+        android:title="Konveksi" />
+</menu>

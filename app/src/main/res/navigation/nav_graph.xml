@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.klafka.ui.home.HomeFragment"
+        android:label="Home"
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_kainDetailFragment"
+            app:destination="@id/kainDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_caraKerjaFragment"
+            app:destination="@+id/caraKerjaFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/caraKerjaFragment"
+        android:name="com.example.klafka.ui.home.CaraKerjaFragment"
+        android:label="Cara Kerja" />
+
+    <!-- Klasifikasi Menu -->
+    <fragment
+        android:id="@+id/klasifikasiFragment"
+        android:name="com.example.klafka.ui.clasification.KlasifikasiFragment"
+        android:label="Klasifikasi">
+        <action
+            android:id="@+id/action_klasifikasiFragment_to_klasifikasiLangsungFragment"
+            app:destination="@id/klasifikasiLangsungFragment" />
+        <action
+            android:id="@+id/action_klasifikasiFragment_to_klasifikasiKonveksiFragment"
+            app:destination="@id/klasifikasiKonveksiFragment" />
+    </fragment>
+
+    <!-- Fragment Klasifikasi Langsung -->
+    <fragment
+        android:id="@+id/klasifikasiLangsungFragment"
+        android:name="com.example.klafka.ui.clasification.KlasifikasiLangsungFragment"
+        android:label="Klasifikasi Langsung">
+        <action
+            android:id="@+id/action_klasifikasiLangsungFragment_to_detialHistoryFragment"
+            app:destination="@id/historyDetailFragment"/>
+    </fragment>
+
+    <!-- Fragment Klasifikasi Konveksi -->
+    <fragment
+        android:id="@+id/klasifikasiKonveksiFragment"
+        android:name="com.example.klafka.ui.clasification.KlasifikasiKonveksiFragment"
+        android:label="Klasifikasi Konveksi">
+        <action
+            android:id="@+id/action_konveksiFragment_to_klasifikasiKonveksiFragment"
+            app:destination="@id/klasifikasiKonveksiFragment" />
+    </fragment>
+
+    <!--Fragment Detial Kain-->
+    <fragment
+        android:id="@+id/kainDetailFragment"
+        android:name="com.example.klafka.ui.detail.KainDetailFragment"
+        android:label="Detail Kain">
+        <argument
+            android:name="item"
+            app:argType="com.example.klafka.model.JenisKain" />
+    </fragment>
+
+    <!-- Fragment Konveksi   -->
+    <fragment
+        android:id="@+id/konveksiFragment"
+        android:name="com.example.klafka.ui.konveksi.KonveksiFragment"
+        android:label="Konveksi" />
+
+    <!--  Fragment History  -->
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.klafka.ui.history.HistoryFragment"
+        android:label="Riwayat" />
+    <fragment
+        android:id="@+id/historyDetailFragment"
+        android:name="com.example.klafka.ui.history.HistoryDetailFragment"
+        android:label="Detail Riwayat" >
+        <argument
+            android:name="jenisKlasifikasi"
+            app:argType="string" />
+        <argument
+            android:name="namaJenisKain"
+            app:argType="string" />
+        <argument
+            android:name="tanggal"
+            app:argType="string" />
+        <argument
+            android:name="imagePath"
+            app:argType="string" />
+    </fragment>
+
+
+
+</navigation>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_shade_8">
+
+    <!-- Konten Utama -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header Logo dan Tombol Back -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/kembali"
+                android:src="@drawable/ic_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/primary_blue" />
+
+            <ImageView
+                android:id="@+id/logoImageKonveksi"
+                android:layout_width="217dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/klafkakain"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Scrollable Form -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/secondary_shade_8"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Judul -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Klasifikasi Skala Konveksi"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/primary_black" />
+                <TextView
+                    android:id="@+id/tvPeringatanGambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/secondary_red_1"
+                    android:textSize="14sp"
+                    android:text="⚠️ Pastikan jumlah gambar sesuai input.\nGunakan gambar yang jelas, pencahayaan cukup,\nserta terlihat tekstur, serat, dan pola kain."
+                    android:background="@drawable/bg_warning"
+                    android:padding="10dp"
+                    android:textAlignment="center" />
+
+                <!-- Spinner Jenis Kain -->
+                <Spinner
+                    android:id="@+id/spinnerJenisKain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_button_style"
+                    android:textAlignment="center" />
+
+                <!-- Input Jumlah Gambar -->
+                <EditText
+                    android:id="@+id/inputJumlahGambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan jumlah kain yang akan diklasifikasi"
+                    android:inputType="number"
+                    android:layout_marginTop="12dp"
+                    android:padding="12dp"
+                     />
+
+                <!-- Tombol Ambil Gambar -->
+                <Button
+                    android:id="@+id/btnAmbilGambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ambil Gambar"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/secondary_blue_2"
+                    android:textColor="@color/primary_white" />
+
+                <!-- Preview Gambar -->
+                <ImageView
+                    android:id="@+id/imagePreviewKonveksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder"
+                    android:background="@drawable/rounded_corner_bg"
+                    android:contentDescription="Preview gambar pertama" />
+
+                <!-- Tombol Proses -->
+                <Button
+                    android:id="@+id/btnProsesKonveksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proses Klasifikasi"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/secondary_blue_2"
+                    android:textColor="@color/primary_white" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Overlay Loading -->
+    <FrameLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</FrameLayout>
